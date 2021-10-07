@@ -8,7 +8,7 @@
 <p>Suppose you get to a bad leaf. You can backtrack to continue the search for a good leaf by revoking your most recent choice, and trying out the next option in that set of options. If you run out of options, revoke the choice that got you here,<br> and try another choice at that node.
      If you end up at the root with no options left, there are no good leaves to be found.</p>
 <p>This needs an example.</p>
-<img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/treesearch.gif">
+<img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/treesearch.gif", align= center>
 
 <ol>
     <li>Starting at Root, your options are A and B. You choose A. </li>
@@ -21,10 +21,37 @@
     <li>At B, your options are E and F. Try E.</li>
     <li>E is good. Congratulations.</li>
 </ol>
+<p>In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices we could make. There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we have. (If we do have an actual tree data structure, backtracking on it is called<i> depth-first tree searching.</i>)
+
+</p>
+<br>
+<h3>The backtracking algorithm.</h3>
 <hr>
  (em) for empasis tell important to and italic (i)
 -- strong and bold(b) same as above
 <br>
+<table border="bold" cellpadding="2px">
+    <thead>
+        <th></th>
+        <th>2 by 3 map	</th>
+        <th>3 by 3 map	</th>	
+        <th>3 by 4 map  </th></thead>
+    <tbody align="center">
+        <tr>
+            <td>Method 1:</td>
+            <td>60 ms.</td>
+            <td>940 ms.</td>
+            <td>60530 ms. (1 minute)</td>
+        </tr>
+        <tr>
+            <td>Method 2:</td>
+            <td>0ms.</td>
+            <td>0ms.</td>
+            <td>0ms.</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
 <code>
     int main(){
         int a;
@@ -45,4 +72,17 @@
         }
     }
 </pre>
-<a href="https://www.prepbytes.com">PREPBYTES</a>
+<a href="form.html">FILL THE FORM</a>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
